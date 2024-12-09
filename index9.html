@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Algoritmos</title>
+    <script>
+        // Função 9: Nome da pessoa mais nova
+        function pessoaMaisNova() {
+            let menorIdade = Infinity;
+            let nomeMaisNovo = "";
+            for (let i = 1; i <= 10; i++) {
+                let nome = prompt("Digite o nome da pessoa " + i + ":");
+                let idade = parseInt(prompt("Digite a idade de " + nome + ":"));
+                if (idade < menorIdade) {
+                    menorIdade = idade;
+                    nomeMaisNovo = nome;
+                }
+            }
+            document.getElementById("resultado").innerHTML = "Pessoa mais nova: " + nomeMaisNovo;
+        }
+    </script>
+</head>
+</html>
