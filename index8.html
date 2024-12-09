@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Algoritmos</title>
+    <script>
+        // Função 8: Contar maiores de idade
+        function contarMaioresIdade() {
+            let contagem = 0;
+            for (let i = 1; i <= 20; i++) {
+                let idade = parseInt(prompt("Digite a idade da pessoa " + i + ":"));
+                if (idade >= 18) {
+                    contagem++;
+                }
+            }
+            document.getElementById("resultado").innerHTML = "Maiores de idade: " + contagem;
+        }
+    </script>
+</head>
+</html>
