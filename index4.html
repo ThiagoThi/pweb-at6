@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Algoritmos</title>
+    <script>
+        // Função 4: Escrever o nome N vezes
+        function repetirNomeN() {
+            let nome = prompt("Digite seu nome:");
+            let vezes = parseInt(prompt("Digite um número (N):"));
+            let mensagem = "";
+            for (let i = 0; i < vezes; i++) {
+                mensagem += nome + "<br>";
+            }
+            document.getElementById("resultado").innerHTML = mensagem;
+        }
+    </script>
+</head>
+</html>
