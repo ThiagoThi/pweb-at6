@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Algoritmos</title>
+    <script>
+        // Função 6: Soma das idades de 20 pessoas
+        function somaIdades20() {
+            let soma = 0;
+            for (let i = 1; i <= 20; i++) {
+                let idade = parseInt(prompt("Digite a idade da pessoa " + i + ":"));
+                soma += idade;
+            }
+            document.getElementById("resultado").innerHTML = "Soma das idades: " + soma;
+        }
+    </script>
+</head>
+</html>
