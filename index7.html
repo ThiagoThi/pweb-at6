@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Algoritmos</title>
+    <script>
+        // Função 7: Média das idades de 20 pessoas
+        function mediaIdades20() {
+            let soma = 0;
+            for (let i = 1; i <= 20; i++) {
+                let idade = parseInt(prompt("Digite a idade da pessoa " + i + ":"));
+                soma += idade;
+            }
+            let media = soma / 20;
+            document.getElementById("resultado").innerHTML = "Média das idades: " + media;
+        }
+    </script>
+</head>
+</html>
